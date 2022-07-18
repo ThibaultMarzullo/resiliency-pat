@@ -1,0 +1,27 @@
+{
+   "completed_at" : "20220615T161802Z",
+   "completed_status" : "Fail",
+   "file_paths" : 
+   [
+      "/Users/tmarzull/Documents/Resiliency/working/parametric-analysis/output/raw/2022-06-15/generated_files",
+      "./files",
+      "./weather",
+      "../../files",
+      "../../weather",
+      "./"
+   ],
+   "hash" : "F23C4570",
+   "steps" : 
+   [
+      {
+         "arguments" : 
+         {
+            "building_type" : "SmallOffice",
+            "climate_zone" : "ASHRAE 169-2013-3A",
+            "template" : "90.1-2016"
+         },
+         "measure_dir_name" : "create_doe_prototype_building_copy"
+      }
+   ],
+   "updated_at" : "20220615T161802Z"
+}
