@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import os, shutil, json, zipfile
+import opyplus as op
 
 class ResultsParser():
 
@@ -51,6 +52,7 @@ class ResultsParser():
                     df = pd.concat([df, csvdf], axis=1)
         postprocessdir = os.path.join(self.postProcessDir, simid)
         df.to_csv(os.path.join(postprocessdir, 'concatenated.csv'))
+        resultsTbl = op.SummaryTable(os.path.join(extractdir, 'eplustbl.htm'))
 
 
     def copyDir(self, dirname):
