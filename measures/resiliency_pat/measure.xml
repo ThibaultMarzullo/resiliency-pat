@@ -3,8 +3,8 @@
   <schema_version>3.0</schema_version>
   <name>resiliency_pat</name>
   <uid>d5465bed-b5b3-4b49-aaab-ebd97bff95df</uid>
-  <version_id>c46c0fbd-9dfb-492c-9447-afca0e6c7c5a</version_id>
-  <version_modified>20220720T163119Z</version_modified>
+  <version_id>ef0c75fb-a2d6-4588-96a0-1d7ff90b6980</version_id>
+  <version_modified>20220721T185222Z</version_modified>
   <xml_checksum>57CD8927</xml_checksum>
   <class_name>ResiliencyPAT</class_name>
   <display_name>Resiliency PAT</display_name>
@@ -14,6 +14,61 @@ ICE generators are defined in JSON files that store the generator type, the fuel
 We also add tariffs depending on the climate zone (hence, the representative city).
 Finally, we set up the SummaryReport to be in CSV format so that the post-processing tool can extract the electricity costs.</modeler_description>
   <arguments>
+    <argument>
+      <name>generator</name>
+      <display_name>Generator rating</display_name>
+      <description>Electrical power output</description>
+      <type>Choice</type>
+      <required>true</required>
+      <model_dependent>false</model_dependent>
+      <default_value>None - None</default_value>
+      <choices>
+        <choice>
+          <value>Diesel - 3.2 kWe</value>
+          <display_name>Diesel - 3.2 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 8 kWe</value>
+          <display_name>Diesel - 8 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 10 kWe</value>
+          <display_name>Diesel - 10 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 12.5 kWe</value>
+          <display_name>Diesel - 12.5 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 20 kWe</value>
+          <display_name>Diesel - 20 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 32 kWe</value>
+          <display_name>Diesel - 32 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 42 kWe</value>
+          <display_name>Diesel - 42 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 55 kWe</value>
+          <display_name>Diesel - 55 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 80 kWe</value>
+          <display_name>Diesel - 80 kWe</display_name>
+        </choice>
+        <choice>
+          <value>Diesel - 113 kWe</value>
+          <display_name>Diesel - 113 kWe</display_name>
+        </choice>
+        <choice>
+          <value>None - None</value>
+          <display_name>None - None</display_name>
+        </choice>
+      </choices>
+    </argument>
     <argument>
       <name>batt_storage_capacity</name>
       <display_name>Capacity of the battery bank</display_name>
@@ -53,61 +108,6 @@ Finally, we set up the SummaryReport to be in CSV format so that the post-proces
       <type>Double</type>
       <required>true</required>
       <model_dependent>false</model_dependent>
-    </argument>
-    <argument>
-      <name>generator</name>
-      <display_name>Diesel generator rating</display_name>
-      <description>Electrical power output</description>
-      <type>Choice</type>
-      <required>true</required>
-      <model_dependent>false</model_dependent>
-      <default_value>None</default_value>
-      <choices>
-        <choice>
-          <value>None</value>
-          <display_name>None</display_name>
-        </choice>
-        <choice>
-          <value>3.2kW Diesel</value>
-          <display_name>3.2kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>8kW Diesel</value>
-          <display_name>8kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>10kW Diesel</value>
-          <display_name>10kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>12.5kW Diesel</value>
-          <display_name>12.5kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>20kW Diesel</value>
-          <display_name>20kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>32kW Diesel</value>
-          <display_name>32kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>42kW Diesel</value>
-          <display_name>42kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>55kW Diesel</value>
-          <display_name>55kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>80kW Diesel</value>
-          <display_name>80kW Diesel</display_name>
-        </choice>
-        <choice>
-          <value>113kW Diesel</value>
-          <display_name>113kW Diesel</display_name>
-        </choice>
-      </choices>
     </argument>
     <argument>
       <name>pv_power</name>
@@ -169,6 +169,30 @@ Finally, we set up the SummaryReport to be in CSV format so that the post-proces
       <checksum>F1C26127</checksum>
     </file>
     <file>
+      <filename>resiliency_pat_test.rb</filename>
+      <filetype>rb</filetype>
+      <usage_type>test</usage_type>
+      <checksum>34557F6C</checksum>
+    </file>
+    <file>
+      <filename>fuelfactors.json</filename>
+      <filetype>json</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>BA95A82B</checksum>
+    </file>
+    <file>
+      <filename>README.md</filename>
+      <filetype>md</filetype>
+      <usage_type>readme</usage_type>
+      <checksum>A67EB875</checksum>
+    </file>
+    <file>
+      <filename>generators/diesel.json</filename>
+      <filetype>json</filetype>
+      <usage_type>resource</usage_type>
+      <checksum>9D98CD41</checksum>
+    </file>
+    <file>
       <version>
         <software_program>OpenStudio</software_program>
         <identifier>3.3.0</identifier>
@@ -177,19 +201,7 @@ Finally, we set up the SummaryReport to be in CSV format so that the post-proces
       <filename>measure.rb</filename>
       <filetype>rb</filetype>
       <usage_type>script</usage_type>
-      <checksum>5FC20CF3</checksum>
-    </file>
-    <file>
-      <filename>resiliency_pat_test.rb</filename>
-      <filetype>rb</filetype>
-      <usage_type>test</usage_type>
-      <checksum>34557F6C</checksum>
-    </file>
-    <file>
-      <filename>README.md</filename>
-      <filetype>md</filetype>
-      <usage_type>readme</usage_type>
-      <checksum>88D0D656</checksum>
+      <checksum>48F74633</checksum>
     </file>
   </files>
 </measure>

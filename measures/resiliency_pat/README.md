@@ -22,6 +22,17 @@ EnergyPlusMeasure
 ## Arguments
 
 
+### Generator rating
+Electrical power output
+**Name:** generator,
+**Type:** Choice,
+**Units:** ,
+**Required:** true,
+**Model Dependent:** false
+
+**Choice Display Names** ["Diesel - 3.2 kWe", "Diesel - 8 kWe", "Diesel - 10 kWe", "Diesel - 12.5 kWe", "Diesel - 20 kWe", "Diesel - 32 kWe", "Diesel - 42 kWe", "Diesel - 55 kWe", "Diesel - 80 kWe", "Diesel - 113 kWe", "None - None"]
+
+
 ### Capacity of the battery bank
 Total capacity of the battery bank in kWh
 **Name:** batt_storage_capacity,
@@ -65,17 +76,6 @@ Initial charge of the battery bank as a fraction of total capacity
 **Units:** ,
 **Required:** true,
 **Model Dependent:** false
-
-
-### Diesel generator rating
-Electrical power output
-**Name:** generator,
-**Type:** Choice,
-**Units:** ,
-**Required:** true,
-**Model Dependent:** false
-
-**Choice Display Names** ["None", "3.2kW Diesel", "8kW Diesel", "10kW Diesel", "12.5kW Diesel", "20kW Diesel", "32kW Diesel", "42kW Diesel", "55kW Diesel", "80kW Diesel", "113kW Diesel"]
 
 
 ### Solar panel output

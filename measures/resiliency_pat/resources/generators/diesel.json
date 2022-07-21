@@ -1,0 +1,64 @@
+{
+    "Diesel" : {
+
+        "3.2 kWe" : {
+            "NominalPower" : 3200,
+            "OptimalPLR" : 0.8,
+            "EfficiencyCurve" : [0.0000000000000003, 0.5512, -0.3347]
+        },
+        "8 kWe" : {
+            "NominalPower" : 8000,
+            "OptimalPLR" : 0.75,
+            "EfficiencyCurve" : [0.0000000000000002, 0.6548, -0.4478]
+        },
+        "10 kWe" : {
+            "NominalPower" : 10000,
+            "OptimalPLR" : 1.0,
+            "EfficiencyCurve" : [0.0000000000000003, 0.6391, -0.3008]
+        },
+        "12.5 kWe" : {
+            "NominalPower" : 12500,
+            "OptimalPLR" : 0.8,
+            "EfficiencyCurve" : [0.0000000000000002, 0.6716, -0.4138]
+        },
+        "20 kWe" : {
+            "NominalPower" : 20000,
+            "OptimalPLR" : 0.65,
+            "EfficiencyCurve" : [0.0373, 1.0865, -0.8328]
+        },
+        "32 kWe" : {
+            "NominalPower" : 32000,
+            "OptimalPLR" : 0.75,
+            "EfficiencyCurve" : [0.0112, 0.9577, -0.6406]
+        },
+        "42 kWe" : {
+            "NominalPower" : 42000,
+            "OptimalPLR" : 0.7,
+            "EfficiencyCurve" : [0.0271, 0.9186, -0.6407]
+        },
+        "55 kWe" : {
+            "NominalPower" : 55000,
+            "OptimalPLR" : 0.7,
+            "EfficiencyCurve" : [0.0268, 0.9497, -0.6899]
+        },
+        "80 kWe" : {
+            "NominalPower" : 80000,
+            "OptimalPLR" : 0.7,
+            "EfficiencyCurve" : [0.0243, 0.9713, -0.6945]
+        },
+        "113 kWe" : {
+            "NominalPower" : 113000,
+            "OptimalPLR" : 0.73,
+            "EfficiencyCurve" : [0.0247, 0.7881, -0.5471]
+        }
+    },
+    "None" : {
+        "None": {
+            "NominalPower" : 0,
+            "OptimalPLR" : "",
+            "EfficiencyCurve" : ["", "", ""]
+        }        
+    }
+}
+
+
